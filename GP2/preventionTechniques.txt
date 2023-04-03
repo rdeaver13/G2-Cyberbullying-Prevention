@@ -1,0 +1,10 @@
+prevent harrasment!
+
+Enter the corresponding number for each section:
+
+1 - Risk factors
+2 - Prevention Techniques
+3 - Quiz
+4 - Resources
+0 - quit
+

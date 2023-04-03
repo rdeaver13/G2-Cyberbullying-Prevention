@@ -1,0 +1,16 @@
+Welcome to learning about Cyberbullying Prevention! 
+
+Cyberbullying is a growing social problem that has become all too common in online communities. 
+It can happen anywhere and at anytime due to the massive internet websites and social media platforms.
+The most common platforms that cyberbullying can occur on are social media, text messages, instant messages, online forums, emails and online gaming communities.
+Some different forms of cyberbullying include: sending, posting, or sharing negative, harmful, false, or mean content about someone else.
+In this section we will cover these types of cyberbullying and ways to prevent them. 
+
+Enter the corresponding number for each section:
+
+1 - Risk factors
+2 - Prevention Techniques
+3 - Quiz 
+4 - Resources
+0 - quit
+
