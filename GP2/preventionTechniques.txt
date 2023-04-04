@@ -1,10 +1,7 @@
-prevent harrasment!
+Prevention Techniques Are Here!
 
-Enter the corresponding number for each section:
+Please enter a 1, 2 or 3 to make your selection...
 
-1 - Risk factors
-2 - Prevention Techniques
-3 - Quiz
-4 - Resources
-0 - quit
-
+1 - Techniques for parents
+2 - Techniques for teens
+3 - Techniques for kids
