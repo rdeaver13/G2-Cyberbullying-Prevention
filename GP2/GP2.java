@@ -49,9 +49,14 @@ public class GP2 {
 
                 case 2:
                 // change text file to prevention techniques
-                    myFile = new File("GP2/preventionTechniques.txt");
+                    //myFile = new File("GP2/preventionTechniques.txt");
+                    //break;
+                // Edited by Ray
+                // call runPreventionTechniques method created in "GP2/preventionTechniques.java"
+                    preventionTechniques preventionTechniques = new preventionTechniques();
+                    preventionTechniques.runPreventionTechniques();
                     break;
-
+                // End of edit
             }
 
             try {
