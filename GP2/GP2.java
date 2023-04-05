@@ -50,7 +50,6 @@ public class GP2 {
                 case 2:
                 // change text file to prevention techniques
                     myFile = new File("GP2/preventionTechniques.txt");
-                    //hi
                     break;
 
             }
