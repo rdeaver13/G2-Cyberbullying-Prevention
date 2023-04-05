@@ -58,7 +58,7 @@ public class GP2 {
                     break;
                 // End of edit
             }
-
+            
             try {
                 Scanner textFile = new Scanner(myFile);
                 // Print info
