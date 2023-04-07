@@ -12,7 +12,6 @@ public class GP2 {
         Scanner input = new Scanner(System.in);
 
         File myFile = new File("GP2/intro.txt");
-        
 
         // Print Welcome Introduction
         try {
@@ -38,19 +37,16 @@ public class GP2 {
             switch(user_input) {
 
                 default:
-                // change text file to error message
-                    myFile = new File("GP2/fail.txt");
+                // change text file to default message
+                    myFile = new File("GP2/intro.txt");
                     break;
 
                 case 1: 
-                // change text file to risk factors
-                    myFile = new File("GP2/riskFactors.txt");
+                // start the file risk factors
+                    riskFactors risks = new riskFactors();
                     break;
 
                 case 2:
-                // change text file to prevention techniques
-                    //myFile = new File("GP2/preventionTechniques.txt");
-                    //break;
                 // Edited by Ray
                 // call runPreventionTechniques method created in "GP2/preventionTechniques.java"
                     preventionTechniques preventionTechniques = new preventionTechniques();
@@ -59,6 +55,7 @@ public class GP2 {
                 // End of edit
             }
             
+            // Display the intro text once again
             try {
                 Scanner textFile = new Scanner(myFile);
                 // Print info
