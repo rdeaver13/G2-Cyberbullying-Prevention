@@ -1,5 +1,3 @@
-package QuizProject;
-
 import java.util.Scanner;
 import java.awt.*;
 import java.io.*;
