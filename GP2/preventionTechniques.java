@@ -11,14 +11,16 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class preventionTechniques {
-    // create a constructor method to be called by main() class
-    public preventionTechniques() {
+    // create a method to be called by main() class
+    public void runPreventionTechniques() {
         boolean verifyRepeatMenu = false;  // initializes a boolean variable used for repeating the menu
-        File myFile = new File("GP2/preventionTechniques.txt");  // initializes a file variable
+        File mainMenuFile = new File("GP2/preventionTechniques.txt");  // initializes a file variable for main menu
+        File subMenuFile = new File("");  // initializes a file variable for sub menu
+        File exitMenuFile = new File("GP2/exitMenu.txt");  // initializes a file variable for exit menu
         
         do {  // using a do-while loop, perform user interactions
             // display message declaring this section as "Prevention Techniques"
-            try(Scanner fileScanner = new Scanner(myFile)) {
+            try(Scanner fileScanner = new Scanner(mainMenuFile)) {
 
                 do {  // read the file line-by-line and print the input
                         System.out.println(fileScanner.nextLine());
@@ -34,28 +36,37 @@ public class preventionTechniques {
 
             // next we gather user input response to the menu displayed
             try(Scanner userScanner = new Scanner(System.in)) {
-                int userChoice = 0;  // initializes a new variable for user choice
+                String userChoice;  // declares a new variable for user choice
+                int userChoiceConvert;  // declares an int variable for use in switch case 
                 boolean verifyUserChoice = false;  // initializes a boolean variable for repeating the menu
 
                 // use a do-while loop to request user input, this way we can ensure the user enters a valid input
                 do {
-                    userChoice = userScanner.nextInt();
-
+                    userChoice = userScanner.next();
+                    if(userScanner.hasNextInt()) {
+                        userChoiceConvert = Integer.parseInt(userChoice);  // convert the String user input to an integer for the switch function
+                    }
+                    else {
+                        userChoiceConvert = 0;
+                    }
                     // use switch function to access the appropriate file
-                    switch(userChoice) {
+                    switch(userChoiceConvert) {
                         case 1:
                             // switch file with "GP2/techniquesForParents.txt" when user enters "1"
-                            myFile = new File("GP2/techniquesForParents.txt");
+                            subMenuFile = new File("GP2/techniquesForParents.txt");
+                            System.out.println("Case 1 test print");
                             verifyUserChoice = true;
                             break;
                         case 2:
                             // switch file with "GP2/techniquesForTeens.txt" when user enters "2"
-                            myFile = new File("GP2/techniquesForTeens.txt");
+                            subMenuFile = new File("GP2/techniquesForTeens.txt");
+                            System.out.println("Case 2 test print");
                             verifyUserChoice = true;
                             break;
                         case 3:
                             // switch file with "GP2/techniquesForKids.txt" when user enters "3"
-                            myFile = new File("GP2/techniquesForKids.txt");
+                            subMenuFile = new File("GP2/techniquesForKids.txt");
+                            System.out.println("Case 3 test print");
                             verifyUserChoice = true;
                             break;
                         default:
@@ -75,7 +86,7 @@ public class preventionTechniques {
             }
 
             // next display the new page 
-            try(Scanner fileScanner = new Scanner(myFile)) {
+            try(Scanner fileScanner = new Scanner(subMenuFile)) {
 
                 do {  // read the file line-by-line and print the input
                     System.out.println(fileScanner.nextLine());
@@ -88,7 +99,11 @@ public class preventionTechniques {
 
                 // prompts user to press Enter key to continue
                 try(Scanner userScanner = new Scanner(System.in)) {
-                    userScanner.nextLine();
+                    userScanner.next();
+                    
+                    // use .close() to close the scanner
+                    userScanner.close();
+
                 } catch(Exception e) {
                     System.out.println("An error has occurred..." + e.getMessage());
                 }
@@ -99,7 +114,7 @@ public class preventionTechniques {
             }
 
             // next ask user if they wish to repeat this menu, or if the wish to exit this menu
-            try(Scanner fileScanner = new Scanner("exitMenu.txt")) {
+            try(Scanner fileScanner = new Scanner(exitMenuFile)) {
 
                 do {  // read the fine line-by-line and print the input
                     System.out.println(fileScanner.nextLine());

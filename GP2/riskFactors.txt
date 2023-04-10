@@ -1,10 +1,54 @@
 Risk Factors Are Here!
 
-Enter the corresponding number for each section:
+There are three main risk factors discussed when talking about cyber bullying.
+These risk factors are perpetration, victimisation, and bystanding.
+To learn more about each risk factor, enter the corresponding number below.
 
-1 - Risk factors
-2 - Prevention Techniques
-3 - Quiz
-4 - Resources
-0 - quit
+1 - Risk Factors for Perpetration
+2 - Risk Factors for Victimization
+3 - Risk Factors for Bystanding
 
+Risk Factors for Perpetration
+
+For perpetration, risk factors include age(peaking at 11 to 14 years of age), 
+time spent online, views accepting or normalising aggression, and having been 
+victimized oneself. There are psychological factors as well, including, 
+moral disengagement, risky online behaviours, lower self-control, thrill-seeking 
+behaviours and impulsivity. Social and community risk factors relate to 
+school engagement and poorer relationships with parents.
+
+Press Enter to continue...
+
+Risk Factors for Victimization
+
+For victimization, risk factors include, being a victim or a perpetrator of 
+traditional bullying, anger, risky online behaviour, frequency of internet use,
+moral disengagement, and hyperactivity. Other factors such as lack of self-control, 
+social anxiety, aggressive thoughts and antisocial behaviour, and lack of empathy 
+have also been associated with cyberbullying victimization. Age is again a risk factor, 
+with some research also indicating that females might be at greater risk. Interpersonally, 
+poorer parent-child relationships and a lack of parental supervision during online 
+activity are also associated with increased risks of online victimisation. Community 
+factors include minority identification such as, racial groups, persons with chronic 
+health conditions as well as persons with a history of sexual abuse, all of whom are 
+more likely to be cyberbullied than their peers. 
+
+Press Enter to continue...
+
+Risk Factors for Bystanding
+
+For bystanding, risk factors suggest that intervention in cyberbullying is 
+less likely when other bystanders are present, and where the victims’ responses 
+are not readily available and oftentimes bystanders will even join the bully. 
+Intervention is also less common when the perceived risk is high, for example when 
+the perpetrator is popular, the bystander feels they would not receive support from 
+others, are afraid of consequences for taking action or damaging a relationship with 
+the bully. Bystanders often have low self-efficacy by believing they do not have the 
+necessary skills or ability to intervene; or have lower levels of affective empathy.
+
+Press Enter to continue...
+
+Would you like to repeat the menu?
+Enter Y for yes
+Or
+Enter N for no
