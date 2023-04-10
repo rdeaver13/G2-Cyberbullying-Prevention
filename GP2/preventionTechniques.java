@@ -16,7 +16,7 @@ public class preventionTechniques {
         boolean verifyRepeatMenu = false;  // initializes a boolean variable used for repeating the menu
         File mainMenuFile = new File("GP2/preventionTechniques.txt");  // initializes a file variable for main menu
         File subMenuFile = new File("");  // initializes a file variable for sub menu
-        File exitMenuFile = new File("");  // initializes a file variable for exit menu
+        File exitMenuFile = new File("GP2/exitMenu.txt");  // initializes a file variable for exit menu
         
         do {  // using a do-while loop, perform user interactions
             // display message declaring this section as "Prevention Techniques"
