@@ -31,6 +31,4 @@ public class CyberbullyingDetector {
          System.out.println("No cyberbullying detected.");
       }
 
-   }
-
 }
