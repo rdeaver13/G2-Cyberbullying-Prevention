@@ -2,6 +2,18 @@ Prevention Techniques Are Here!
 
 Please enter a 1, 2 or 3 to make your selection...
 
-1 - Techniques for parents
-2 - Techniques for teens
-3 - Techniques for kids
+1 - Techniques for Parents
+2 - Techniques for Teens
+3 - Techniques for Kids
+
+Techniques for Parents:
+
+This section will show techniques for parents.
+
+Techniques for Teens:
+
+This section will show techniques for teens.
+
+Techniques for Kids:
+
+This section will show techniques for kids.

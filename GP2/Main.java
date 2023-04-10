@@ -1,5 +1,7 @@
 package GP2;
 
+import java.io.IOException;
+
 public class Main {
     public static void main(String[] args) {
         
@@ -9,7 +11,12 @@ public class Main {
 
         preventionTechniques preventionTechniques = new preventionTechniques();
 
-        preventionTechniques.runPreventionTechniques();
+        try {
+            preventionTechniques.runPreventionTechniques();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
         // end preventionTechniques
 

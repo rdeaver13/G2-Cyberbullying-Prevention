@@ -6,28 +6,32 @@
  */
 package GP2;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class preventionTechniques {
     // create a method to be called by main() class
-    public void runPreventionTechniques() {
+    public void runPreventionTechniques() throws IOException {
         boolean verifyRepeatMenu = false;  // initializes a boolean variable used for repeating the menu
-        File mainMenuFile = new File("GP2/preventionTechniques.txt");  // initializes a file variable for main menu
-        File subMenuFile = new File("");  // initializes a file variable for sub menu
+        File menuFile = new File("GP2/preventionTechniques.txt");  // initializes a file variable for main menu
+        //File subMenuFile = new File("");  // initializes a file variable for sub menu
         File exitMenuFile = new File("GP2/exitMenu.txt");  // initializes a file variable for exit menu
         
         do {  // using a do-while loop, perform user interactions
             // display message declaring this section as "Prevention Techniques"
-            try(Scanner fileScanner = new Scanner(mainMenuFile)) {
+            try(BufferedReader fileBR = new BufferedReader(new FileReader(menuFile))) {
+                
+                int endLine = 8;  // sets final line to be read for this portion
+                String line;  // declares a variable for holding value from each line
 
-                do {  // read the file line-by-line and print the input
-                        System.out.println(fileScanner.nextLine());
-                } while(fileScanner.hasNextLine());  // verifies that there is another line to be printed
-            
-                // use .close() to close the scanner
-                fileScanner.close();
+                for(int i = 0; i <= endLine; i++) {
+                    line = fileBR.readLine();
+                    System.out.println(line);
+                }
         
             // catch statement that displays error message if one occurs during file access
             } catch(FileNotFoundException e) {
@@ -52,20 +56,65 @@ public class preventionTechniques {
                     // use switch function to access the appropriate file
                     switch(userChoiceConvert) {
                         case 1:
-                            // switch file with "GP2/techniquesForParents.txt" when user enters "1"
-                            subMenuFile = new File("GP2/techniquesForParents.txt");
+                            // print techniques for parents chunk when user enters "1"
+                            try(BufferedReader fileBR = new BufferedReader(new FileReader(menuFile))) {
+
+                                int startLine = 8;  // sets starting line
+                                int endLine = 12;  // sets ending line
+                                String line;  // holds value from each line
+
+                                for(int i = 0; i <= startLine; i++) {
+                                    fileBR.readLine();
+                                }
+
+                                for(int i = 9; i <= endLine; i++) {
+                                    line = fileBR.readLine();
+                                    System.out.println(line);
+                                }
+
+                            }
                             System.out.println("Case 1 test print");
                             verifyUserChoice = true;
                             break;
                         case 2:
-                            // switch file with "GP2/techniquesForTeens.txt" when user enters "2"
-                            subMenuFile = new File("GP2/techniquesForTeens.txt");
+                            // print techniques for teens chunk when user enters "2"
+                            try(BufferedReader fileBR = new BufferedReader(new FileReader(menuFile))) {
+
+                                int startLine = 12;  // sets starting line
+                                int endLine = 16;  // sets ending line
+                                String line;  // holds value from each line
+
+                                for(int i = 0; i <= startLine; i++) {
+                                    fileBR.readLine();
+                                }
+
+                                for(int i = 13; i <= endLine; i++) {
+                                    line = fileBR.readLine();
+                                    System.out.println(line);
+                                }
+
+                            }
                             System.out.println("Case 2 test print");
                             verifyUserChoice = true;
                             break;
                         case 3:
-                            // switch file with "GP2/techniquesForKids.txt" when user enters "3"
-                            subMenuFile = new File("GP2/techniquesForKids.txt");
+                            // print techniques for kids chunk when user enters "3"
+                            try(BufferedReader fileBR = new BufferedReader(new FileReader(menuFile))) {
+
+                                int startLine = 16;  // sets starting line
+                                int endLine = 20;  // sets ending line
+                                String line;  // holds value from each line
+
+                                for(int i = 0; i <= startLine; i++) {
+                                    fileBR.readLine();
+                                }
+
+                                for(int i = 17; i <= endLine; i++) {
+                                    line = fileBR.readLine();
+                                    System.out.println(line);
+                                }
+
+                            }
                             System.out.println("Case 3 test print");
                             verifyUserChoice = true;
                             break;
@@ -85,30 +134,15 @@ public class preventionTechniques {
                 System.out.println("An error has occurred..." + e.getMessage());
             }
 
-            // next display the new page 
-            try(Scanner fileScanner = new Scanner(subMenuFile)) {
+            System.out.println("Press Enter key to continue...");
 
-                do {  // read the file line-by-line and print the input
-                    System.out.println(fileScanner.nextLine());
-                } while(fileScanner.hasNextLine());  // verifies that there is another line to be printed
-                
-                // use .close() to close the scanner
-                fileScanner.close();
-
-                System.out.println("Press Enter key to continue...");
-
-                // prompts user to press Enter key to continue
-                try(Scanner userScanner = new Scanner(System.in)) {
-                    userScanner.next();
+            // prompts user to press Enter key to continue
+            try(Scanner userScanner = new Scanner(System.in)) {
+                userScanner.next();
                     
-                    // use .close() to close the scanner
-                    userScanner.close();
+                // use .close() to close the scanner
+                userScanner.close();
 
-                } catch(Exception e) {
-                    System.out.println("An error has occurred..." + e.getMessage());
-                }
-
-            // catch statement that displays error message if one occurs during file access
             } catch(Exception e) {
                 System.out.println("An error has occurred..." + e.getMessage());
             }
