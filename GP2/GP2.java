@@ -53,6 +53,12 @@ public class GP2 {
                     preventionTechniques.runPreventionTechniques();
                     break;
                 // End of edit
+
+                case 3:
+                    // quiz class here
+
+                case 4:
+                    myFile = new File("GP2/resources.txt");
             }
             
             // Display the intro text once again
