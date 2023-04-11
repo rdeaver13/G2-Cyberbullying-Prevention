@@ -1,15 +1,15 @@
-a a)Bullying someone b)Being nice c)Poking them d)Eating with them
-b a)Bullying the internet b)Bullying online c)Using the web d)Fighting in person
-d a)Teasing b)Threatening c)Hitting d)All of the above
-c a)It's less harmful b)No harm is done c)It happens 24/7 d)Lower suicide rates
-d a)Posting revealing pictures b)Showing personal info c)Going on unsafe websites d)Internet safety
-c a)No b)Probably not c)Yes d)Maybe
-a a)Talk to them b)Encourage them c)Reward them do nothing
-b a)Keep it to yourself b)Talk to someone you trust c)Talk to the bully d)Do nothing
-a a)Don't do anything about it b)Block them c)Reach out for help d)Protect your accounts
-d a)To make them feel good b)To make them feel powerful c)To make them feel cool d)All of the above
-c a)Computer b)Video Games c)Cell Phone d)Hand-Written Notes
-d a)Skip school b)Do drugs c)Have poor grades d)All of the above
-d a)Ignore or block the person b)Tell your parents c)Save the messages as evidence d)Get into a fight with the person
-a a)Higher chances of self harm or suicide b)Better people c)Happier relationships d)Less violence
-b a)Elementary school b)Middle School c)High school d)College
+a,Bullying someone,Being nice,Poking them,Eating with them
+b,Bullying the internet,Bullying online,Using the web,Fighting in person
+d,Teasing,Threatening,Hitting,All of the above
+c,It's less harmful,No harm is done,It happens 24/7,Lower suicide rates
+d,Posting revealing pictures,Showing personal info,Going on unsafe websites,Internet safety
+c,No,Probably not,Yes,Maybe
+a,Talk to them,Encourage them,Reward them,do nothing
+b,Keep it to yourself,Talk to someone you trust,Talk to the bully,Do nothing
+a,Don't do anything about it,Block them,Reach out for help,Protect your accounts
+d,To make them feel good,To make them feel powerful,To make them feel cool,All of the above
+c,Computer,Video Games,Cell Phone,Hand-Written Notes
+d,Skip school,Do drugs,Have poor grades,All of the above
+d,Ignore or block the person,Tell your parents,Save the messages as evidence,Get into a fight with the person
+a,Higher chances of self harm or suicide,Better people,Happier relationships,Less violence
+b,Elementary school,Middle School,High school,College
