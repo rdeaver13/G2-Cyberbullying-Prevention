@@ -13,3 +13,13 @@ d,Skip school,Do drugs,Have poor grades,All of the above
 d,Ignore or block the person,Tell your parents,Save the messages as evidence,Get into a fight with the person
 a,Higher chances of self harm or suicide,Better people,Happier relationships,Less violence
 b,Elementary school,Middle School,High school,College
+d,Ignore them,Let them handle it,Step in and handle it yourself,Get help from an adult
+a,Ignore them,Call them,Text back,Tell them whatever info they need
+c,1%,50%,20%,0%
+d,22%,5%,100%,24%
+a,18%,22%,5%,70%
+d,Depression,Anxiety,Self-Esteem issues,All of the above
+b,0%,80%,50%,100%
+a,Yes,No they are loved by everyone,Only by other kids in LGBTQ+,Only adults
+c,911,669-123-1234,988,1(800)-567-1255
+d,Morning,Night,Noon,24/7
