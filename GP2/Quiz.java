@@ -1,4 +1,4 @@
-package QuizProject;
+package GP2;
 
 import java.io.*;
 import java.util.*;
@@ -84,10 +84,10 @@ public class Quiz {
     }
 
 
-    public static void main(String[] args) {
+    public void runQuiz() {
         //Adding the file paths
-        String questionsFilePath = "QuizProject/Questions.txt";
-        String answersFilePath = "QuizProject/Answers.txt";
+        String questionsFilePath = "GP2/Questions.txt";
+        String answersFilePath = "GP2/Answers.txt";
 
         try {
             //Executing everything
