@@ -76,7 +76,6 @@ public class Quiz {
             }
         }
 
-        scanner.close();
         //Showing the user their score
         System.out.println("Total questions: " + totalQuestions);
         System.out.println("Correct answers: " + correctAnswers);
