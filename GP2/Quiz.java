@@ -1,37 +1,101 @@
-import java.util.Scanner;
-import java.awt.*;
-import java.io.*;
+package GP2;
 
+import java.io.*;
+import java.util.*;
 
 public class Quiz {
-    public static void main(String[] args){
-        //Declaring the Scanner class
-        Scanner input = new Scanner(System.in);
-        
-        //Opening the files
-        try{
-            //Creating the reader for questions.txt and answers.txt
-            FileReader Qreader = new FileReader("Questions.txt");
-            BufferedReader QbufferedReader = new BufferedReader(Qreader);
 
-            FileReader Areader = new FileReader("Answers.txt");
-            BufferedReader AbufferedReader = new BufferedReader(Areader);
+    //Reading all the questions from the questions file
+    public static ArrayList<String> loadQuestions(String filePath) throws IOException {
+        ArrayList<String> questions = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            questions.add(line.trim());
+        }
+        reader.close();
+        return questions;
+    }
+    
 
-            String line;
+    //Adding all the answers in the file
+    public static ArrayList<String> loadAnswers(String filePath) throws IOException {
+        ArrayList<String> answers = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            line.substring(2);
+            answers.add(line);
+        }
+        reader.close();
+        return answers;
+    }
 
-            //Reading and printing all the questions
-            While((line = QbufferedReader.readLine()) != null){
-                System.out.println(line);
+
+    //Adding everything into the quiz, and asking the user for their answer
+    public static void playQuiz(ArrayList<String> questions, ArrayList<String> answers) {
+        //Score counter
+        int correctAnswers = 0;
+        int totalQuestions = questions.size();
+
+        //Adding the questions and answers to a hashmap
+        HashMap<String,String> QnA = new HashMap<String,String>();
+        for(int k = 0; k < totalQuestions; k++){
+            QnA.put(questions.get(k),answers.get(k));
+        }
+        //Adding the shuffled questions arraylist
+        ArrayList<String> shuffledQuestions = new ArrayList<>(QnA.keySet());
+
+
+        //Printing the questions and the corresponding answers
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < totalQuestions; i++) {
+            //Randomizing the questions and the corresponding answers
+            int randIdx = new Random().nextInt(totalQuestions);
+            String randomQuestion = shuffledQuestions.get(randIdx);
+            String randomAnswers = QnA.get(randomQuestion);
+
+            System.out.println("Question " + (i + 1) + ":");
+            System.out.println(randomQuestion);
+            String[] answerChoices = randomAnswers.split(",");
+            String correctChoice = answerChoices[0].trim();
+
+            //Printing out the questions and the answer choices
+            for (int j = 1; j < answerChoices.length; j++) {
+                System.out.println((char) (64 + j) + ". " + answerChoices[j]);
             }
-            Qreader.close();
-            Areader.close();
 
-        } catch(IOException e){
-            e.printStackTrace();
+            System.out.print("Your answer (A / B / C / D): ");
+            String userAnswer = new String("null");
+            userAnswer = scanner.nextLine();
+            if (userAnswer.equalsIgnoreCase(correctChoice)) {
+                System.out.println("Correct!");
+                correctAnswers++;
+            } else {
+                System.out.println("Incorrect.");
+            }
         }
 
-        
+        scanner.close();
+        //Showing the user their score
+        System.out.println("Total questions: " + totalQuestions);
+        System.out.println("Correct answers: " + correctAnswers);
+        System.out.println("Your score: " + correctAnswers + "/" + totalQuestions);
+    }
 
-        
+
+    public void runQuiz() {
+        //Adding the file paths
+        String questionsFilePath = "GP2/Questions.txt";
+        String answersFilePath = "GP2/Answers.txt";
+
+        try {
+            //Executing everything
+            ArrayList<String> questions = loadQuestions(questionsFilePath);
+            ArrayList<String> answers = loadAnswers(answersFilePath);
+            playQuiz(questions, answers);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -56,6 +56,9 @@ public class GP2 {
 
                 case 3:
                     // quiz class here
+                    Quiz quiz = new Quiz();
+                    quiz.runQuiz();
+                    break;
 
                 case 4:
                     myFile = new File("GP2/resources.txt");
