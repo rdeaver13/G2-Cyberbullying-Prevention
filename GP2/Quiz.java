@@ -83,7 +83,7 @@ public class Quiz {
     }
 
 
-    public void runQuiz() {
+    public static void runQuiz() {
         //Adding the file paths
         String questionsFilePath = "GP2/Questions.txt";
         String answersFilePath = "GP2/Answers.txt";
