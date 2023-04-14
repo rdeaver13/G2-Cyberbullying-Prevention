@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> a4d02b6d1114a3048ed47ace537c57294c567731
 package GP2;
 
 import java.util.Scanner;
