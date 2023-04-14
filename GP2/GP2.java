@@ -56,8 +56,7 @@ public class GP2 {
 
                 case 3:
                     // quiz class here
-                    Quiz quiz = new Quiz();
-                    quiz.runQuiz();
+                    Quiz.runQuiz();
                     break;
 
                 case 4:
