@@ -1,4 +1,4 @@
-Package GP2;
+package GP2;
 
 import java.util.Scanner;
 

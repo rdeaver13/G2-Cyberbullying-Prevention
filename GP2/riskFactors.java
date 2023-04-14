@@ -1,8 +1,10 @@
+package GP2;
+
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class CyberbullyingDetector {
+public class riskFactors {
 
       Scanner sc = new Scanner(System.in);
       System.out.println("Please enter the text to be analyzed:");

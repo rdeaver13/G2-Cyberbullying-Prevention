@@ -9,18 +9,13 @@ public class Main {
 
         // start preventionTechniques
 
-        //preventionTechniques preventionTechniques = new preventionTechniques();
-
-<<<<<<< HEAD
         try {
+            preventionTechniques preventionTechniques = new preventionTechniques();
             preventionTechniques.runPreventionTechniques();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-=======
-        //preventionTechniques.runPreventionTechniques();
->>>>>>> 4999ff749de31313cd29cf241e039c028cafd9fe
 
         // end preventionTechniques
 

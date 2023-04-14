@@ -50,7 +50,6 @@ public class GP2 {
                 // Edited by Ray
                 // call runPreventionTechniques method created in "GP2/preventionTechniques.java"
                     preventionTechniques preventionTechniques = new preventionTechniques();
-                    preventionTechniques.runPreventionTechniques();
                     break;
                 // End of edit
 
