@@ -49,7 +49,11 @@ public class GP2 {
                 case 2:
                 // Edited by Ray
                 // call runPreventionTechniques method created in "GP2/preventionTechniques.java"
-                    preventionTechniques preventionTechniques = new preventionTechniques();
+                    try {
+                        preventionTechnniquesRewrite.runPreventionTechniques();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 // End of edit
 
